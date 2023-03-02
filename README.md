@@ -2,13 +2,6 @@
 
 This project presents **Staking** based on timestamp with core functionalities and it's different implementations.
 
-Find here more information about  smart contracts architecture:
-
-* <a href="hhttps://applicature.atlassian.net/wiki/spaces/SCL/pages/1657667665/Core+Staking+Architecture"> Core Based Staking </a>
-* <a href="https://applicature.atlassian.net/wiki/spaces/SCL/pages/1704525831/Cooldown+Staking+Architecture"> Cooldown Staking </a>
-* <a href="https://applicature.atlassian.net/wiki/spaces/SCL/pages/1704460326/Sanctions+Staking+Architecture"> Sanctions Staking </a>
-* <a href="https://applicature.atlassian.net/wiki/spaces/SCL/pages/1704525867/STK+Staking"> STK Staking </a>
-
 ---
 
 ## How to clone project?
