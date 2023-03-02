@@ -1,0 +1,72 @@
+{
+  "name": "sc-library",
+  "description": "Smart contracts library",
+  "version": "1.0.0",
+  "author": "Applicature",
+  "license": "MIT",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "coverage": "hardhat coverage",
+    "format:solidity": "prettier --write contracts/*.sol contracts/**/*.sol",
+    "format:ts": "prettier-eslint --eslint-config-path ./.eslintrc.json --write '**/*.ts'",
+    "check:solidity": "solhint -c .solhint.json -w 0 contracts/*.sol contracts/**/*.sol",
+    "check:ts": "eslint .",
+    "deploy-Vesting": "npx hardhat deploy-Vesting --network",
+    "deploy-VestingRevocable": "npx hardhat deploy-VestingRevocable --network",
+    "deploy-VestingUIHelper": "npx hardhat deploy-VestingUIHelper --network",
+    "deploy-Vesting:verify": "npx hardhat deploy-Vesting --verify --network",
+    "deploy-VestingRevocable:verify": "npx hardhat deploy-VestingRevocable --verify --network",
+    "deploy-VestingUIHelper:verify": "npx hardhat deploy-VestingUIHelper --verify --network"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.3",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "chai": "^4.3.6",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.23.1",
+    "eth-crypto": "^2.3.0",
+    "fs": "^0.0.1-security",
+    "hardhat": "^2.11.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
+    "simple-json-db": "^2.0.0",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.8.2",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/applicature/sc-library/issues"
+  },
+  "homepage": "https://bitbucket.org/applicature/sc-library#readme",
+  "keywords": [
+    "vesting",
+    "staking",
+    "airdrop",
+    "library",
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts"
+  ]
+}

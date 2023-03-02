@@ -1,0 +1,20 @@
+image: node:14.17
+
+definitions:
+  steps:
+    - step: &check
+        name: Check linting, formatting and run tests
+        caches:
+          - node
+        script:
+          - npm ci
+          - npm run check:solidity
+          - npm run check:js
+          - npm run test
+
+pipelines:
+  default:
+    - step: *check
+  pull-requests:
+    '**':
+      - step: *check
